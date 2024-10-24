@@ -12,4 +12,4 @@ RUN yarn
 
 RUN yarn build
 
-CMD medusa migrations run && yarn start
+RUN medusa migrations run && yarn start
