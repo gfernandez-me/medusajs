@@ -1,0 +1,29 @@
+{
+    "name": "MedusaJS",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "esbenp.prettier-vscode",
+                "dotenv.dotenv-vscode",
+                "yoavbls.pretty-ts-errors",
+                "ms-azuretools.vscode-docker",
+                "streetsidesoftware.code-spell-checker",
+                "eamodio.gitlens",
+                "dbaeumer.vscode-eslint@3.0.5"
+            ]
+        }
+    },
+    "containerEnv": {
+        "FORCE_COLOR": "1"
+    },
+    "remoteUser": "node",
+    "forwardPorts": [
+        6379,
+        5432
+    ],
+    "mounts": [],
+    "postCreateCommand": ""
+}
